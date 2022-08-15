@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+.ahnaf{
+    width: 500px;
+    height: 200px;
+    border: 5px solid green;
+    margin: auto;
+}
+#character{
+    width: 50px;
+    height: 50px;
+	background-image: url('pic/cat.png');
+    background-color: white;
+    position:relative;
+    top: 150px;
+	background-size: 100% 100%;
+	
+	left: 10px;
+	
+
+}
+.animate{
+    animation: jump 0.3s linear;
+}
+@keyframes jump{
+    0%{top: 150px;}
+    30%{top: 100px;}
+    70%{top: 100px;}
+    100%{top: 150px;}
+}
+
+#block{
+    background-color: purple;
+    width: 30px;
+    height: 20px;
+	background-image: url('pic/block.png');
+	background-color: white;
+	background-size: 100% 100%;
+    position: relative;
+    top: 130px;
+    left: 500px;
+    animation: block 10s linear infinite;
+}
+@keyframes block{
+    0%{left: 500px}
+    100%{left: -20px}
+}
+
+p{
+    text-align: center;
+}
